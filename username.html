@@ -7,12 +7,15 @@
 <body>
   <h2>Contact Form</h2>
   <form action="https://formspree.io/f/mpqwgnke" method="POST">
-    <!-- Replace YOUR_FORMSPREE_URL_HERE with the URL you got from Formspree -->
+    <!-- Replace abcdxyz with your actual Formspree form ID -->
+
+    <label for="email">Your Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
 
     <label for="message">Your Message:</label><br>
-    <input type="text" id="message" name="message" required><br><br>
+    <textarea id="message" name="message" required></textarea><br><br>
 
-    <button type="submit">Submit</button>
+    <button type="submit">Send</button>
   </form>
 </body>
 </html>
