@@ -2,20 +2,32 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Formspree Example</title>
+  <title>Search Box Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 100px;
+    }
+    input[type="text"] {
+      width: 400px;
+      padding: 10px;
+      font-size: 16px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
-  <h2>Contact Form</h2>
+  <h2>Search Box</h2>
   <form action="https://formspree.io/f/mpqwgnke" method="POST">
-    <!-- Replace abcdxyz with your actual Formspree form ID -->
-
-    <label for="email">Your Email:</label><br>
-    <input type="email" id="email" name="email" required><br><br>
-
-    <label for="message">Your Message:</label><br>
-    <textarea id="message" name="message" required></textarea><br><br>
-
-    <button type="submit">Send</button>
+    <!-- The name attribute is important so Formspree knows what field you’re sending -->
+    <input type="text" name="search_query" placeholder="Type your text here..." required>
+    <button type="submit">Submit</button>
   </form>
 </body>
 </html>
